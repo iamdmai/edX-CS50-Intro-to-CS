@@ -51,7 +51,10 @@ def isWordGuessed(secretWord, lettersGuessed):
       False otherwise
     '''
     # FILL IN YOUR CODE HERE...
-
+    for i in secretWord:
+       if i not in lettersGuessed:
+           return False
+    return True
 
 
 def getGuessedWord(secretWord, lettersGuessed):
